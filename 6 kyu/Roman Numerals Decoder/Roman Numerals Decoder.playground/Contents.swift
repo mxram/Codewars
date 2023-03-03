@@ -1,8 +1,8 @@
 import Foundation
 
-// https://www.codewars.com/kata/541c8630095125aba6000c00/train/swift
+// https://www.codewars.com/kata/51b6249c4612257ac0000005
 
-func solution2(_ string: String) -> Int {
+func solution(_ string: String) -> Int {
     var result = 0
     var digits = [Int]()
     
@@ -46,7 +46,7 @@ func decode(_ char: Character) -> Int {
     return digit
 }
 
-func solution(_ string: String) -> Int {
+func solution2(_ string: String) -> Int {
     let sym: [Character: Int] = ["I": 1,
                                  "V": 5,
                                  "X": 10,

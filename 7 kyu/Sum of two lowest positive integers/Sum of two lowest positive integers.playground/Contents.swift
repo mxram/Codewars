@@ -1,6 +1,6 @@
 import Foundation
 
-//https://www.codewars.com/kata/5412509bd436bd33920011bc/train/swift
+// https://www.codewars.com/kata/5412509bd436bd33920011bc/train/swift
 
 func maskify(_ string: String) -> String {
     var result = ""
@@ -20,11 +20,10 @@ func maskify3(_ string: String) -> String {
     return .init(repeating: "#", count: string.count - 4) + string.suffix(4)
 }
 
-// MARK: - Tests
+// MARK: Tests
 
 import XCTest
 
-//      Executed 3 tests, with 0 failures (0 unexpected) in 0.225 (0.226) seconds
 class SolutionTest: XCTestCase {
     private let num1 = "4556364607935616", exp1 = "############5616"
     private let num2 = "1", exp2 = "1"
