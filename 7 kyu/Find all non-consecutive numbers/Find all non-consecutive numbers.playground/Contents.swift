@@ -20,19 +20,6 @@ func allNonConsecutive2(_ arr: [Int]) -> [(Int, Int)] {
     arr.enumerated().dropFirst().filter { arr[$0.0 - 1] != $0.1 - 1 }
 }
 
-func findDigit(_ num: Int, _ nth: Int) -> Int {
-    guard nth > 0 else {
-        return -1
-    }
-    
-    let stringNum = String(abs(num))
-    guard stringNum.count >= nth else {
-        return 0
-    }
-    
-    return stringNum.reversed()[nth - 1].wholeNumberValue ?? 0
-}
-
 // MARK: Tests
 
 import XCTest
