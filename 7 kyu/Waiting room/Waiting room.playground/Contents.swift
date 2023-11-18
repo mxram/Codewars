@@ -3,7 +3,7 @@ import Foundation
 // https://www.codewars.com/kata/542f0c36d002f8cd8a0005e5/train/swift
 
 func lastChair(_ n: Int) -> Int {
-    return 0
+    n - 1
 }
 
 // MARK: - Tests
